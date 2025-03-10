@@ -1,0 +1,96 @@
+.carousel-item {
+  position: relative;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.carousel-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.carousel-overlay p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.trending-movies-wrapper {
+  padding: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.trending-movies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.see-all-link {
+  text-decoration: none;
+  color: #DC3658;
+  font-weight: bold;
+}
+
+.carousel .control-arrow {
+  background-color: rgb(69, 65, 65) !important; 
+  color: white !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  /* opacity: 0.7; */
+  position: absolute;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.carousel .control-arrow:hover {
+  background-color: #DC3658 !important;
+  opacity: 1;
+}
+
+.carousel .control-prev {
+  left: 5px;
+}
+
+.carousel .control-next {
+  right: 5px;
+}
+
+.carousel .thumbs-wrapper {
+  display: none !important;
+}
+
+.error{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.carousel-overlay {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #000000;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-item-text {
+  text-align: start;
+  margin: 8px 16px;
+  text-decoration: none !important;
+}

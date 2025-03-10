@@ -1,0 +1,36 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(135deg, #1d2838 0%, #c3cfe2 100%); */
+  background-image: url('../assets/loginBgd.jpg');
+  background-repeat: round;
+}
+
+.auth-box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-toggle {
+  cursor: pointer;
+  color: #f84464;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.auth-toggle:hover {
+  color: #b53149;
+}
+
+.error-message {
+  background-color: #ffebee;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}

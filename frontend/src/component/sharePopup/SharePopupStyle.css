@@ -1,0 +1,40 @@
+.dilog-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.share-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.close-button {
+  padding: 4px;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.share-options {
+  padding: 0 16px 16px 16px;
+  font-size: 1.9rem;
+}
+
+.share-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+  cursor: pointer;
+}
+
+.share-option:hover {
+  background-color: #f5f5f5;
+}
+
+.share-option svg {
+  color: #666;
+}

@@ -1,0 +1,5 @@
+
+
+ type Query {
+   googleAuth(creadential: String): String
+ }

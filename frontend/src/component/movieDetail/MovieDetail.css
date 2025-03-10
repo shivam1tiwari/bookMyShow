@@ -1,0 +1,259 @@
+.movie-details-container {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 0px !important;
+}
+
+.movie-header {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.movie-header-container{
+  width: 80%;
+  margin: auto;
+}
+
+.movie-poster {
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.poster-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  display: 'block';
+  position: 'relative';
+}
+
+.cinemas {
+  text-align: center;
+  padding: 7px;
+  margin: -6px 0px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 16px 16px;
+  font-size: 0.8rem;
+}
+
+.trailers {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 2rem !important;
+  text-transform: none !important;
+}
+
+.trailers:hover {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.movie-info {
+  margin: 1.7rem 0rem;
+}
+
+.share-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0rem 2rem;
+}
+
+.share-button {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 10px 16px !important;
+  border-radius: 0.5rem !important;
+}
+
+.share-button:hover {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.movie-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.rating-section {
+  cursor: pointer;
+  background-color: #333333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.rate-button {
+  border-color: #fff !important;
+  background-color: #fff !important;
+  color: #333333 !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+}
+
+.format-lang {
+  display: flex;
+  margin: 10px 0;
+  color: #fff;
+  gap: 1rem;
+}
+
+.format-lang-content {
+  background-color: #E5E5E5 !important;
+  color: #141414 !important;
+  padding: 4px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-tickets-btn {
+  background-color: #f84464 !important;
+  color: #fff;
+  margin: 2rem 0rem !important;
+  text-transform: none !important;
+  padding: 0.6rem 0.2rem !important;
+  width: 22%;
+}
+
+.section {
+  margin: 0rem 3.5rem;
+  width: 80%;
+}
+
+.section h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  width: 80%;
+  color: rgb(133 133 133);
+  font-size: 15px;
+}
+
+.divider {
+  width: 80%;
+  margin: 0rem 3.5rem !important;
+  padding: 1rem;
+}
+
+.cast-item,
+.crew-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cast-item h6,
+.crew-item h6 {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.cast-item p,
+.crew-item p {
+  color: #666;
+}
+
+.review-btn {
+  color: #f84464 !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.tag-btn {
+  border-radius: 20px;
+  text-transform: none;
+}
+
+.review-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.review-tags {
+  font-weight: bold;
+  color: #f84464;
+  margin: 10px 0;
+}
+
+.sticky-navbar {
+  position: fixed;
+  height: 14vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 0rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sticky-navbar h6 {
+  font-weight: 600;
+}
+.sticky-navbar.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.book-tickets-btn {
+  background-color: #f84464;
+}
+
+.book-tickets-btn:hover {
+  background-color: #d63a55;
+}
+
+.movie-details-container {
+  padding-top: 20px;
+}
+
+.book-tickets-btn {
+  background-color: #f84464;
+  color: white;
+  padding: 8px 20px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.book-tickets-btn:hover {
+  background-color: #d63a55;
+}

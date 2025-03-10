@@ -1,0 +1,55 @@
+.ticket-popup-title {
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  margin-bottom: 4px;
+  color: rgb(51, 49, 49);
+}
+
+.ticket-popup-subtitle {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.ticket-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.ticket-popup-close {
+  cursor: pointer;
+  width: 0.8em;
+}
+
+.ticket-popup-content {
+  padding:2px 0px 16px 0px;
+}
+
+.language-section {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #d2e6f0;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.format-container {
+  display: flex;
+  gap: 10px;
+  margin: 1rem 0rem 0rem 0.5rem;
+}
+
+.format-box {
+  padding: 6px 12px;
+  border-radius: 12px;
+  border: 1px solid #aaa2a2;
+  color:  #f84464;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}

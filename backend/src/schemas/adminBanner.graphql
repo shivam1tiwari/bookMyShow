@@ -1,0 +1,19 @@
+type Banner {
+  id: ID!
+  name: String!
+  url: String!
+  uploadDate: String!
+}
+
+type Query {
+  getBanners: [Banner]
+}
+type Response {
+  success: Boolean!
+  message: String!
+}
+
+type Mutation {
+  uploadBanner(name: String!, url: String!, uploadDate: String!): Banner
+  deleteBanner(id: Int!): Response
+}

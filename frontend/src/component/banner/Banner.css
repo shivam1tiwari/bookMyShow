@@ -1,0 +1,31 @@
+img{
+  width: 100%;
+}
+
+.banner{
+  margin: 5rem auto;
+  max-width: 80%;
+
+}
+
+@media (max-width: 1200px) {
+  .banner{
+    max-width: 90%;
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner{
+    max-width: 90%;
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner{
+    margin: 2rem auto;
+    max-width: 100%, 
+   
+  } 
+}
