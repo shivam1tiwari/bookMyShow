@@ -113,7 +113,7 @@
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin: auto;
+  margin:auto;
   margin-top: 4rem;
 }
 
@@ -134,11 +134,11 @@
 
 .footer-copyright {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 /* Typography */
 .footer-text {
-  font-size: 0.1rem;
+  font-size: .9rem;
   color: inherit;
 }

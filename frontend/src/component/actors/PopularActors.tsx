@@ -50,8 +50,8 @@ const PopularActors: React.FC = () => {
         <Typography variant="h4" component="h2" sx={{ fontWeight: 'bold' }}>
           Popular Actors
         </Typography>
-        <Link to={`/allActors`}>
-          <Button href="/see-all" sx={{ textTransform: 'none', color: '#e91e63', fontWeight: 'bold' }}>
+        <Link to={`/allActors`} data-discover="true">
+          <Button data-label = "see-all-button" sx={{ textTransform: 'none', color: '#e91e63', fontWeight: 'bold' }}>
             See All &gt;
           </Button>
         </Link>

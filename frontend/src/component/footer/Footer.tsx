@@ -14,7 +14,7 @@ const Footer = () => {
     <>
       <Box className="footer-service-container">
         <Box className="footer-service-content">
-          <IconButton className="footer-hut-icon">
+          <IconButton aria-label='Home-Icon-button' className="footer-hut-icon">
             <Home sx={{ color: '#fff', fontSize: 40 }} />
           </IconButton>
           <Box className="footer-list-show">
@@ -23,7 +23,7 @@ const Footer = () => {
               Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow
             </Typography>
           </Box>
-          <Button className="footer-contact-button">
+          <Button aria-label = ' Contct-button'className="footer-contact-button">
             Contact Today!
           </Button>
         </Box>
@@ -39,7 +39,7 @@ const Footer = () => {
           <Typography className="footer-info-text">Resend Booking Confirmation</Typography>
         </Box>
         <Box className="footer-info-item">
-          <Email className="footer-info-icon" />
+          <Email aria-label='Email' className="footer-info-icon" />
           <Typography className="footer-info-text">Subscribe to the Newsletter</Typography>
         </Box>
       </Box>
@@ -50,7 +50,7 @@ const Footer = () => {
             <Divider orientation="horizontal" className="footer-divider" />
           </Box>
           <Box display="flex" alignItems="center" sx={{ marginX: 2 }}>
-            <Logo style={{ marginRight: "14px" }} />
+            <Logo aria-label='Logo' style={{ marginRight: "14px" }} />
           </Box>
           <Box className="footer-divider-right">
             <Divider orientation="horizontal" className="footer-divider" />
@@ -58,29 +58,29 @@ const Footer = () => {
         </Box>
 
         <Container maxWidth="lg" className='footer-icon-container'>
-          <Grid2 container spacing={4}>
+          <Grid2  spacing={4}>
             <Box className="footer-icon-wrapper">
-              <IconButton className="footer-icon-button">
-                <Facebook sx={{ color: "#1d1717" }} />
+              <IconButton aria-label='Facebook' className="footer-icon-button">
+                <Facebook  sx={{ color: "#1d1717" }} />
               </IconButton>
 
-              <IconButton className="footer-icon-button">
-                <Twitter sx={{ color: "#1d1717" }} />
+              <IconButton aria-label='Twiter' className="footer-icon-button">
+                <Twitter  sx={{ color: "#1d1717" }} />
               </IconButton>
 
-              <IconButton className="footer-icon-button">
-                <Instagram sx={{ color: "#1d1717" }} />
+              <IconButton aria-label='Instagram'  className="footer-icon-button">
+                <Instagram  sx={{ color: "#1d1717" }} />
               </IconButton>
 
-              <IconButton className="footer-icon-button">
-                <YouTube sx={{ color: "#1d1717" }} />
+              <IconButton aria-label='Youtube' className="footer-icon-button">
+                <YouTube  sx={{ color: "#1d1717" }} />
               </IconButton>
 
-              <IconButton className="footer-icon-button">
+              <IconButton aria-label='Pinterest'  className="footer-icon-button">
                 <Pinterest sx={{ color: "#1d1717" }} />
               </IconButton>
 
-              <IconButton className="footer-icon-button">
+              <IconButton aria-label='Linkdin'  className="footer-icon-button">
                 <LinkedIn sx={{ color: "#1d1717" }} />
               </IconButton>
             </Box>

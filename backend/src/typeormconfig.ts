@@ -1,4 +1,5 @@
 import { DataSource } from 'typeorm';
+import path from 'path';
 import dotenv from 'dotenv';
 dotenv.config();
 /**
@@ -16,7 +17,7 @@ export const AppDataSource = new DataSource({
   url: process.env.DATABASE_URL,
   synchronize: true, // Auto-syncs schema
   logging: true,
-  entities: ['src/entities/*.ts'],
+  entities: [path.resolve('src/entities/*.ts')],
   // migrations: ['src/migrations/*.ts'],
 });
 

@@ -24,9 +24,9 @@ export const bannerResolvers = {
           uploadDate,
         });
 
-        await newBanner.save();  // Save the banner directly
+        await newBanner.save(); 
 
-        return newBanner; // Return the newly created banner
+        return newBanner; 
       } catch (error) {
         throw new Error('Failed to upload banner');
       }

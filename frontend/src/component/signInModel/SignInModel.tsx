@@ -25,7 +25,6 @@ import { ISignInModalProps } from "../../type";
 const SignInModal: React.FC<ISignInModalProps> = ({ open, onClose }: ISignInModalProps): JSX.Element => {
   const [mobileNumber, setMobileNumber] = useState('');
   const [googleAuth, setGoogleAuth] = useState<string>('')
-  const recaptchaRef = useRef<HTMLDivElement | null>(null);
   /**
    * Redirects the user to the login page when they opt to sign in with email.
    */
@@ -130,7 +129,7 @@ const SignInModal: React.FC<ISignInModalProps> = ({ open, onClose }: ISignInModa
 
 
             <Box className="popup-terms">
-              I agree to the <a href="/terms-and-conditions">Terms & Conditions</a> & <a href="/privacy">Privacy Policy</a>
+              I agree to the Terms & Conditions & Privacy Policy
             </Box>
           </Box>
         </Box>

@@ -8,6 +8,7 @@ import { useQuery } from "@apollo/client";
 import { GET_MOVIES_BY_NAME } from "../../queries/queries";
 import { Link } from "react-router-dom";
 import Toaster from "../signInModel/Toaster";
+import { useNavigate } from "react-router-dom";
 /**
  * Header component renders the top navigation bar with functionality for searching movies, 
  * signing in, signing out, and displaying search results.
@@ -22,7 +23,7 @@ const Header = (): JSX.Element => {
   const [isLogin, setIsLogin] = useState(false);
   // State to manage toast visibility
   const [showToast, setShowToast] = useState(false);
-  
+  const location = useNavigate();
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
    /**
@@ -49,7 +50,7 @@ const Header = (): JSX.Element => {
     setIsLogin(false);
     setShowToast(true); // Show toast after logout
     setTimeout(() => {
-      window.location.href = "http://localhost:3000/"; // Redirect after 2 seconds
+      location('/'); // Redirect after 2 seconds
     }, 2000); 
   };
 
@@ -58,7 +59,7 @@ const Header = (): JSX.Element => {
       <AppBar position="static" className="header-appbar">
         <Toolbar className="header-toolbar">
           <Box className="header-left-section">
-            <Logo className="header-logo" onClick={() => window.location.href = "http://localhost:3000/"} />
+            <Logo className="header-logo" onClick={() => location('/')} />
             <Box className="header-search-bar">
               <Search className="header-search-icon" />
               <InputBase

@@ -24,7 +24,7 @@ const AllActors: React.FC = () => {
             <Box className="movie-item" sx={{ position: 'relative', display: 'inline-block', width: '100%' }}>
               <img
                 src={`https://image.tmdb.org/t/p/w500${actor?.profile_path}`}
-              />
+             alt='actor-image' />
               <Box className="movie-overlay">
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
                   <Star sx={{ marginRight: 1, fill: 'green', width: '0.8em' }} />

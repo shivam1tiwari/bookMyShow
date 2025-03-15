@@ -19,9 +19,10 @@ const Slider = () => {
   const { data, loading, error } = useQuery<IBannerData>(GET_BANNERS);
 
   const slides = data?.getBanners
+  console.log(data)
 
   if (error) {
-    return <h1>Something went wrong.</h1>
+    return <Box sx={{textAlign:"center"}}><h1>Something went wrong.</h1></Box>
   }
 
   if (loading) {
@@ -39,13 +40,13 @@ const Slider = () => {
       autoPlay={true}
       interval={3000}
       transitionTime={500}
-      centerSlidePercentage={80}
+      centerSlidePercentage={77}
       showIndicators={false}
       selectedItem={1}
       useKeyboardArrows={true}
 
     >
-      {slides?.map((val) => <Box sx={{ height: "33vh", width: "100%" }} ><img key={val.url} className="slide-img" src={val.url} /></Box>)}
+      {slides?.map((val) => <Box sx={{ height: "33vh", width: "100%" }} ><img key={val.url} className="slide-img" src={val.url} alt={val.name}/></Box>)}
     </Carousel>
   );
 };

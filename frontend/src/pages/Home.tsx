@@ -1,10 +1,14 @@
-import PopularActors from "../component/actors/PopularActors"
+import React from "react"
+// import {Suspense} from 'react'
+// import PopularActors from "../component/actors/PopularActors"
 import Banner from "../component/banner/Banner"
-import Footer from "../component/footer/Footer"
 import Header from "../component/header/Header"
 import Navbar from "../component/header/Navbar"
 import Slider from "../component/slider/Slider"
 import TrendingMovies from "../component/trending/TrendingMovies"
+import { CircularProgress } from "@mui/material"
+const Footer = React.lazy(() => import('../component/footer/Footer'));
+const PopularActors = React.lazy(() => import('../component/actors/PopularActors'));
 /**
  * Home Component
  * 
@@ -22,8 +26,10 @@ const Home = () => {
       <Slider />
       <TrendingMovies />
       <Banner />
+      {/* <Suspense fallback={<CircularProgress/>}> */}
       <PopularActors />
-      <Footer />
+       <Footer />
+      {/* </Suspense> */}
     </>
   )
 }
